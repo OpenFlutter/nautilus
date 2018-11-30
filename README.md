@@ -19,7 +19,7 @@ Nautilus是阿里百川电商SDK在Flutter上的实现，通过Nautilus可以实
 ## 淘宝授权登录
 进行登录:
 ```dart
-Future<InitAsyncResult>  result = await 
+Future<InitAsyncResult>  result = await nautilus.login();
 ```
 我们也可以通过*nautilus*获取当用户信息：
 ```dart
@@ -29,7 +29,7 @@ Future<InitAsyncResult>  result = await
 也可以查询当前用户是否登录：
 ```dart
  import 'package:nautilus/nautilus.dart' as nautilus;
- Future<bool> isLogin = await nautilus.isLogin()
+ Future<bool> isLogin = await nautilus.isLogin();
 ```
 
 ## 打开淘宝详情：

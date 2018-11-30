@@ -1,0 +1,6 @@
+framework module AlibcTradeCommon {
+  umbrella header "AlibcTradeCommon.h"
+
+  export *
+  module * { export * }
+}

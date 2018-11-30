@@ -1,0 +1,22 @@
+{
+    "group0": {
+        "dataId": "com.alibaba.baichuan.nbcp.meta.default",
+        "group": "1.0.0",
+        "lastUpdate": "Jun 14, 2016 2:12:22 PM",
+        "sign": ""
+    },
+    "albbTradeConfig": {
+        "isSyncForTaoke": "YES",
+        "isForceH5": "NO",
+        "isNeedAlipay": "YES",
+        "loginDegarade": "NO",
+        "double11OpenType":"0",
+        "sampling":"10000"
+    },
+    "group2": {
+        "abc1": "agc1",
+        "abc2": "agc2",
+        "abc3": "agc3",
+        "11111":"11111"
+    }
+}

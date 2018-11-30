@@ -1,0 +1,23 @@
+{
+    "iosAppLinkConfig": {
+        "exp" : 600,
+        "degradeType" : 0,
+        "canDeepLink" : 0,
+        "appScheme":{
+            "taobao" : "tbopen://m.taobao.com/tbopen/index.html",
+            "tmall" : "tmall://page.tm/appLink",
+        },
+        "h5Scheme":{
+            "detail":"https://h5.m.taobao.com/awp/core/detail.htm",
+            "shop":"https://shop.m.taobao.com/shop/shopIndex.htm",
+            "activity":"https://huodong.m.taobao.com/go/2085.html",
+        },
+        "dynamicParam":{
+            "k1":"v1"
+        },
+        "downloadUrl":{
+            "taobao":"https://itunes.apple.com/cn/app/tao-bao-sui-shi-sui-xiang/id387682726?mt=8",
+            "tmall":"https://itunes.apple.com/cn/app/tian-mao-zhi-bo-gou-wu-xin/id518966501?mt=8"
+        }
+    }
+}

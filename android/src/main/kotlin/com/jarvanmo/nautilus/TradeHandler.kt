@@ -52,7 +52,6 @@ internal class TradeHandler(private val registry: PluginRegistry.Registrar) {
             }
 
             override fun onFailure(code: Int, msg: String) {
-                Toast.makeText(registry.activity(),msg+"",Toast.LENGTH_SHORT).show()
                 result.success(mapOf(
                         keyPlatform to keyAndroid,
                         keyResult to false,

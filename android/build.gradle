@@ -48,30 +48,33 @@ dependencies {
     implementation 'com.alibaba:fastjson:1.2.52'
 
     implementation 'androidx.appcompat:appcompat:1.0.2'
-
-//支付
+    //支付（以支付宝官网公布的百川版本为准）
     implementation 'com.alibaba.alipay:alipaySingle:20160825@jar'
 
     //登陆
-    implementation 'com.ali.auth.sdk:alibabauth_core:1.5.1.6@jar'
-    implementation 'com.ali.auth.sdk:alibabauth_ui:1.5.1.6@aar'
-    implementation 'com.ali.auth.sdk:alibabauth_ext:1.5.1.6@jar'
+    implementation 'com.ali.auth.sdk:alibabauth_core:1.4.3@jar'
+    implementation 'com.ali.auth.sdk:alibabauth_ui:1.4.3@aar'
+    implementation 'com.ali.auth.sdk:alibabauth_ext:1.4.3@jar'
+    //【可选】仅供特殊合作伙伴使用
+    implementation 'com.ali.auth.sdk:alibabauth_accountlink:1.1.4@jar'
 
     //安全基础
-    implementation 'com.taobao.android:securityguardaar3:5.4.67@aar'
+    implementation 'com.taobao.android:securityguardaar3:5.1.81@aar'
+    //【可选】安全高级，如使用了发放红包、优惠券高级功能，则必须引入
+    implementation 'com.taobao.android:securitybodyaar3:5.1.25@aar'
 
     //Mtop网关
-    implementation 'com.taobao.android:mtopsdk_allinone_open:1.3.1@jar'
+    implementation 'com.taobao.android:mtopsdk_allinone_open:1.2.2.4@jar'
 
     //applink
-    compile 'com.alibaba.sdk.android:alibc_link_partner:1.1.0.6'
+    implementation 'com.alibaba.sdk.android:alibc_link_partner:1.1.0.6'
 
     //UT
     implementation 'com.taobao.android:utdid4all:1.1.5.3_proguard@jar'
     implementation 'com.alibaba.mtl:app-monitor-sdk:2.5.1.3_for_bc_proguard@jar'
-//
-//    //联盟SDK
-//    compile 'com.alimama.tunion.sdk:tuniontradesdk:0.3.2'
+
+    //联盟SDK
+    implementation 'com.alimama.tunion.sdk:tuniontradesdk:0.3.2@aar'
 
     //电商SDK
     implementation 'com.alibaba.sdk.android:alibc_trade_common:3.1.1.210'

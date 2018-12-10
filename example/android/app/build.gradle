@@ -37,7 +37,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.alibaba.sdk.trade.demo"
+        applicationId "com.jarvanmo.nautilus"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode flutterVersionCode.toInteger()
@@ -46,16 +46,16 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file("debug.keystore")
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
+            storeFile file("public.jks")
+            storePassword 'public'
+            keyAlias 'public'
+            keyPassword 'public'
         }
         release {
-            storeFile file("debug.keystore")
-            storePassword 'android'
-            keyAlias 'androiddebugkey'
-            keyPassword 'android'
+            storeFile file("public.jks")
+            storePassword 'public'
+            keyAlias 'public'
+            keyPassword 'public'
         }
     }
 

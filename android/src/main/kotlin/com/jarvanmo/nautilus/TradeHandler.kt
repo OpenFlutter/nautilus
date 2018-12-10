@@ -1,6 +1,7 @@
 package com.jarvanmo.nautilus
 
 import android.util.Log
+import android.widget.Toast
 import com.alibaba.baichuan.android.trade.AlibcTrade
 import com.alibaba.baichuan.android.trade.AlibcTradeSDK
 import com.alibaba.baichuan.android.trade.callback.AlibcTradeCallback
@@ -51,6 +52,7 @@ internal class TradeHandler(private val registry: PluginRegistry.Registrar) {
             }
 
             override fun onFailure(code: Int, msg: String) {
+                Toast.makeText(registry.activity(),msg+"",Toast.LENGTH_SHORT).show()
                 result.success(mapOf(
                         keyPlatform to keyAndroid,
                         keyResult to false,

@@ -37,7 +37,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.jarvanmo.nautilus"
+        applicationId "com.alibaba.sdk.trade.demo"
         minSdkVersion 16
         targetSdkVersion 22
         versionCode flutterVersionCode.toInteger()
@@ -50,16 +50,16 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file("public.jks")
-            storePassword 'public'
-            keyAlias 'public'
-            keyPassword 'public'
+            storeFile file("debug.keystore")
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
         }
         release {
-            storeFile file("public.jks")
-            storePassword 'public'
-            keyAlias 'public'
-            keyPassword 'public'
+            storeFile file("debug.keystore")
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
         }
     }
 
@@ -67,6 +67,15 @@ android {
         release {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
+
+            shrinkResources false
+        }
+
+        debug {
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.debug
+
+            shrinkResources false
         }
     }
 

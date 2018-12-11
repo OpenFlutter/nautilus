@@ -17,9 +17,6 @@ class _LoginPageState extends State<LoginPage> {
       body: Column(
         children: <Widget>[
           FlatButton(onPressed: (){
-
-          },child: Text(_initResult),),
-          FlatButton(onPressed: (){
             nautilus.login().then((data){
               setState(() {
                 _result ="nick->${data.user.nick}";

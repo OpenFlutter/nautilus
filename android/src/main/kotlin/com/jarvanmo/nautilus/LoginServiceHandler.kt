@@ -51,7 +51,11 @@ internal class LoginServiceHandler(private val registrar: PluginRegistry.Registr
                         "avatarUrl" to alibcLogin.session.avatarUrl,
                         "nick" to alibcLogin.session.nick,
                         "openId" to alibcLogin.session.openId,
-                        "openSid" to alibcLogin.session.openSid
+                        "openSid" to alibcLogin.session.openSid,
+                        "userId" to alibcLogin.session.userid,
+                        "topAccessToken" to alibcLogin.session.topAccessToken,
+                        "topAuthCode" to alibcLogin.session.topAuthCode,
+                        "topExpireTime" to alibcLogin.session.topExpireTime
                 )
                 result.success(mapOf(
                         keyPlatform to keyAndroid,
@@ -87,7 +91,11 @@ internal class LoginServiceHandler(private val registrar: PluginRegistry.Registr
                     "avatarUrl" to alibcLogin.session.avatarUrl,
                     "nick" to alibcLogin.session.nick,
                     "openId" to alibcLogin.session.openId,
-                    "openSid" to alibcLogin.session.openSid
+                    "openSid" to alibcLogin.session.openSid,
+                    "userId" to alibcLogin.session.userid,
+                    "topAccessToken" to alibcLogin.session.topAccessToken,
+                    "topAuthCode" to alibcLogin.session.topAuthCode,
+                    "topExpireTime" to alibcLogin.session.topExpireTime
             )
         }
         result.success(mapOf(

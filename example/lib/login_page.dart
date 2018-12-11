@@ -16,7 +16,9 @@ class _LoginPageState extends State<LoginPage> {
       appBar: AppBar(title: Text("Login With Taobao"),),
       body: Column(
         children: <Widget>[
+          FlatButton(onPressed: (){
 
+          },child: Text(_initResult),),
           FlatButton(onPressed: (){
             nautilus.login().then((data){
               setState(() {

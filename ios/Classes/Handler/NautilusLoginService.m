@@ -13,11 +13,15 @@
     NSDictionary *user = nil;
     BOOL isLogin = [[ALBBSession sharedInstance] isLogin];
     if (isLogin) {
+        
         user = @{
                 @"avatarUrl": [[ALBBSession sharedInstance]getUser].avatarUrl,
                 @"nick": [[ALBBSession sharedInstance]getUser].nick,
                 @"openId": [[ALBBSession sharedInstance]getUser].openId,
-                @"openSid": [[ALBBSession sharedInstance]getUser].openSid
+                @"openSid": [[ALBBSession sharedInstance]getUser].openSid,
+                @"topAccessToken": [[ALBBSession sharedInstance]getUser].topAccessToken,
+                @"topAuthCode":[[ALBBSession sharedInstance]getUser].topAuthCode,
+                
         };
     }
     result(@{
@@ -43,7 +47,9 @@
                         @"avatarUrl": [session getUser].avatarUrl,
                         @"nick": [session getUser].nick,
                         @"openId": [session getUser].openId,
-                        @"openSid": [session getUser].openSid
+                        @"openSid": [session getUser].openSid,
+                        @"topAccessToken": [session getUser].topAccessToken,
+                        @"topAuthCode":[session getUser].topAuthCode,
                 }
         });
     }              failureCallback:^(ALBBSession *session, NSError *error) {

@@ -25,7 +25,10 @@ Future<LoginResult> login() async {
         avatarUrl: userMap["avatarUrl"],
         nick: userMap["nick"],
         openId: userMap["openId"],
-        openSid: userMap["openSid"]);
+        openSid: userMap["openSid"],
+        topAccessToken:userMap["topAccessToken"],
+        topAuthCode:userMap["topAuthCode"]
+        );
     loginResult = LoginResult(
         result: isSuccess,
         platform: result[_keyPlatform],
@@ -59,7 +62,9 @@ Future<User> getUser() async {
         avatarUrl: userMap["avatarUrl"],
         nick: userMap["nick"],
         openId: userMap["openId"],
-        openSid: userMap["openSid"]);
+        openSid: userMap["openSid"],
+        topAccessToken:userMap["topAccessToken"],
+        topAuthCode:userMap["topAuthCode"]);
   }
 
   return user;

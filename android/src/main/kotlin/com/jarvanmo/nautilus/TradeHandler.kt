@@ -2,6 +2,7 @@ package com.jarvanmo.nautilus
 
 import android.util.Log
 import android.widget.Toast
+import com.ali.auth.third.core.MemberSDK
 import com.alibaba.baichuan.android.trade.AlibcTrade
 import com.alibaba.baichuan.android.trade.AlibcTradeSDK
 import com.alibaba.baichuan.android.trade.callback.AlibcTradeCallback
@@ -36,9 +37,11 @@ internal class TradeHandler(private val registry: PluginRegistry.Registrar) {
         if (debuggable) {
             AlibcTradeCommon.turnOnDebug()
             AlibcTradeBiz.turnOnDebug()
+            MemberSDK.turnOnDebug()
         } else {
             AlibcTradeCommon.turnOffDebug()
             AlibcTradeBiz.turnOffDebug()
+            MemberSDK.turnOnDebug()
         }
 
         //电商SDK初始化

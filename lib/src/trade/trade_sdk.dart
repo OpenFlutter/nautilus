@@ -2,12 +2,12 @@ import 'package:flutter/foundation.dart';
 
 class InitAsyncResult {
   final String platform;
-  final bool result;
+  final bool isSuccessful;
   final int errorCode;
   final String errorMessage;
 
   InitAsyncResult(
-      {this.platform, this.result, this.errorCode, this.errorMessage});
+      {this.platform, this.isSuccessful, this.errorCode, this.errorMessage});
 }
 
 class TaoKeParams {
@@ -28,7 +28,7 @@ class TaoKeParams {
 class TradeResult {
   final int openResultCode;
   final String platform;
-  final bool result;
+  final bool isSuccessful;
   final int errorCode;
   final String errorMessage;
   final TradeResultType tradeResultType;
@@ -38,7 +38,7 @@ class TradeResult {
   TradeResult(
       {this.openResultCode,
       this.platform,
-      this.result,
+      this.isSuccessful,
       this.errorCode,
       this.errorMessage,
       this.tradeResultType,

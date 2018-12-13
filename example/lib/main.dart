@@ -54,7 +54,7 @@ class HomeBodyState extends State<HomeBody> {
   void initTradeService(){
     nautilus.initTradeAsync(debuggable: false).then((data){
       setState(() {
-        _initTradeServiceResult ="初始化结果：${data.result}";
+        _initTradeServiceResult ="初始化结果：${data.isSuccessful}";
       });
     });
   }

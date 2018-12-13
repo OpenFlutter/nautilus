@@ -12,14 +12,14 @@ class User {
 
 class LoginResult {
   final String platform;
-  final bool result;
+  final bool isSuccessful;
   final int errorCode;
   final String errorMessage;
   final User user;
 
   LoginResult(
       {this.platform,
-      this.result,
+      this.isSuccessful,
       this.errorCode,
       this.errorMessage,
       this.user});

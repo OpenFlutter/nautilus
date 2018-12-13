@@ -30,14 +30,14 @@ Future<LoginResult> login() async {
         topAuthCode:userMap["topAuthCode"]
         );
     loginResult = LoginResult(
-        result: isSuccess,
+        isSuccessful: isSuccess,
         platform: result[_keyPlatform],
         errorCode: null,
         errorMessage: null,
         user: user);
   } else {
     loginResult = LoginResult(
-        result: isSuccess,
+        isSuccessful: isSuccess,
         platform: result[_keyPlatform],
         errorCode: result[_keyErrorCode],
         errorMessage: result[_keyErrorMessage],
@@ -86,7 +86,7 @@ Future<InitAsyncResult> initTradeAsync(
   assert(debuggable != null);
   return InitAsyncResult(
       platform: result[_keyPlatform],
-      result: result[_keyResult],
+      isSuccessful: result[_keyResult],
       errorMessage: result[_keyErrorMessage],
       errorCode: result[_keyErrorCode]);
 }
@@ -141,7 +141,7 @@ Future<TradeResult> openItemDetail({@required String itemID,
   return TradeResult(
       openResultCode: result["openResultCode"],
       platform: result[_keyPlatform],
-      result: result["openResultCode"],
+      isSuccessful: result["openResultCode"],
       tradeResultType: tradeResultType,
       paySuccessOrders: result["paySuccessOrders"],
       payFailedOrders: result["payFailedOrders"],
@@ -198,7 +198,7 @@ Future<TradeResult> openUrl({@required String pageUrl,
   return TradeResult(
       openResultCode: result["openResultCode"],
       platform: result[_keyPlatform],
-      result: result["openResultCode"],
+      isSuccessful: result["result"],
       tradeResultType: tradeResultType,
       paySuccessOrders: result["paySuccessOrders"],
       payFailedOrders: result["payFailedOrders"],

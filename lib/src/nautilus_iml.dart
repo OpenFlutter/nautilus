@@ -141,7 +141,7 @@ Future<TradeResult> openItemDetail({@required String itemID,
   return TradeResult(
       openResultCode: result["openResultCode"],
       platform: result[_keyPlatform],
-      isSuccessful: result["openResultCode"],
+      isSuccessful: result["result"],
       tradeResultType: tradeResultType,
       paySuccessOrders: result["paySuccessOrders"],
       payFailedOrders: result["payFailedOrders"],

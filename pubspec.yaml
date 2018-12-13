@@ -1,6 +1,6 @@
 name: nautilus
 description: Nautilus是阿里百川电商SDK在Flutter上的实现，通过Nautilus可以实现淘宝登录，打开淘宝商品详情等功能。
-version: 0.0.5
+version: 0.0.6
 author: JarvanMo <jarvan.mo@gmail.com>
 homepage: https://github.com/OpenFlutter/nautilus
 

@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
           FlatButton(onPressed: (){
             nautilus.login().then((data){
               setState(() {
-                _result ="nick->${data.user.nick}";
+                _result ="nick->${data?.user?.nick}";
               });
             });
           }, child: Text("Login with TaoBao")),

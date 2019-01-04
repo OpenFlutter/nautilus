@@ -27,7 +27,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tbopen23433004</string>
+				<string>tbopen25358466</string>
 			</array>
 		</dict>
 	</array>
@@ -35,6 +35,7 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
+		<string>taobao</string>
 		<string>tbopen</string>
 		<string>tmall</string>
 	</array>

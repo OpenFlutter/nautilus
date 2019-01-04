@@ -10,6 +10,7 @@ class _LoginPageState extends State<LoginPage> {
 
   String _result ="";
   String _initResult = "未初始化";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +20,12 @@ class _LoginPageState extends State<LoginPage> {
           FlatButton(onPressed: (){
             nautilus.login().then((data){
               setState(() {
-                _result ="nick->${data?.user?.nick}";
+                if(data.isSuccessful){
+                  _result ="nick->${data?.user?.nick}";
+                }else{
+                  _result = "error->${data.errorMessage}";
+                }
+
               });
             });
           }, child: Text("Login with TaoBao")),

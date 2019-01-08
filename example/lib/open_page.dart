@@ -26,7 +26,7 @@ class _OpenByPageState extends State<OpenByPage> {
   }
 
   _openItemDetail(){
-    nautilus.openItemDetail(itemID: "41576306115");
+    nautilus.openItemDetail(itemID: "41576306115",taoKeParams: nautilus.TaoKeParams(unionId: "", subPid: "", pid: "", adzoneId: ""));
   }
   _openUrl(){
     nautilus.openUrl(pageUrl: "https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=2165762428&activityId=5698d91c0b474d9caf88279009bda4f3");

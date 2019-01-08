@@ -112,11 +112,11 @@ Future<TradeResult> openItemDetail({@required String itemID,
   Map taoKe;
   if (taoKeParams != null) {
     taoKe = {
-      "taoKeParamsPid": taoKeParams.pid,
-      "taoKeParamsSubPid": taoKeParams.subPid,
-      "taoKeParamsUnionId": taoKeParams.unionId,
-      "taoKeParamsAdzoneId": taoKeParams.adzoneId,
-      "taoKeParamsExtParams": taoKeParams.extParams
+      "taoKeParamsPid": taoKeParams.pid??"",
+      "taoKeParamsSubPid": taoKeParams.subPid??"",
+      "taoKeParamsUnionId": taoKeParams.unionId??"",
+      "taoKeParamsAdzoneId": taoKeParams.adzoneId??"",
+      "taoKeParamsExtParams": taoKeParams.extParams??{}
     };
   }
 
@@ -170,11 +170,11 @@ Future<TradeResult> openUrl({@required String pageUrl,
   Map taoKe;
   if (taoKeParams != null) {
     taoKe = {
-      "taoKeParamsPid": taoKeParams.pid,
-      "taoKeParamsSubPid": taoKeParams.subPid,
-      "taoKeParamsUnionId": taoKeParams.unionId,
-      "taoKeParamsAdzoneId": taoKeParams.adzoneId,
-      "taoKeParamsExtParams": taoKeParams.extParams
+      "taoKeParamsPid": taoKeParams.pid??"",
+      "taoKeParamsSubPid": taoKeParams.subPid??"",
+      "taoKeParamsUnionId": taoKeParams.unionId??"",
+      "taoKeParamsAdzoneId": taoKeParams.adzoneId??"",
+      "taoKeParamsExtParams": taoKeParams.extParams??{}
     };
   }
 

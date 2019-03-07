@@ -44,9 +44,7 @@ android {
         versionName flutterVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        ndk {
-            abiFilters 'armeabi-v7a','x86_64','x86'
-        }
+
     }
     signingConfigs {
         debug {
@@ -69,6 +67,9 @@ android {
             signingConfig signingConfigs.debug
 
             shrinkResources false
+            ndk {
+                abiFilters 'armeabi-v7a'
+            }
         }
 
         debug {
@@ -88,6 +89,6 @@ flutter {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test:runner:1.1.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 }

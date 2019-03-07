@@ -139,11 +139,12 @@
 
     AlibcTradeTaokeParams *taoke = [[AlibcTradeTaokeParams alloc] init];
     NSDictionary *taoKeParams = call.arguments[@"taoKeParams"];
-    taoke.pid = taoKeParams[@"taoKeParamsPid"];
-    taoke.subPid = taoKeParams[@"taoKeParamsSubPid"];
-    taoke.unionId = taoKeParams[@"taoKeParamsUnionId"];
-    taoke.adzoneId = taoKeParams[@"taoKeParamsAdzoneId"];
-    taoke.extParams = taoKeParams[@"taoKeParamsExtParams"];
+
+    taoke.pid =  (taoKeParams[@"taoKeParamsPid"] == (id) [NSNull null]) ? nil : taoKeParams[@"taoKeParamsPid"];
+    taoke.subPid = (taoKeParams[@"taoKeParamsSubPid"] == (id) [NSNull null]) ? nil : taoKeParams[@"taoKeParamsSubPid"];
+    taoke.unionId = (taoKeParams[@"taoKeParamsUnionId"] == (id) [NSNull null]) ? nil : taoKeParams[@"taoKeParamsUnionId"];
+    taoke.adzoneId = (taoKeParams[@"taoKeParamsAdzoneId"] == (id) [NSNull null]) ? nil : taoKeParams[@"taoKeParamsAdzoneId"];
+    taoke.extParams = (taoKeParams[@"taoKeParamsExtParams"] == (id) [NSNull null]) ? nil : taoKeParams[@"taoKeParamsExtParams"];
     return taoke;
 
 

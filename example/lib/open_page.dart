@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nautilus/nautilus.dart'as nautilus;
-class OpenByPage extends StatefulWidget  {
+import 'package:nautilus/nautilus.dart' as nautilus;
+
+class OpenByPage extends StatefulWidget {
   @override
   _OpenByPageState createState() => _OpenByPageState();
 }
@@ -14,21 +15,29 @@ class _OpenByPageState extends State<OpenByPage> {
       ),
       body: ListView(
         children: <Widget>[
-          FlatButton(onPressed: _openItemDetail,
-          child: Text("打开淘宝详情"),
+          FlatButton(
+            onPressed: _openItemDetail,
+            child: Text("打开淘宝详情"),
           ),
-          FlatButton(onPressed: _openUrl,
-          child: Text("打开Url"),
+          FlatButton(
+            onPressed: _openUrl,
+            child: Text("打开Url"),
           )
         ],
       ),
     );
   }
 
-  _openItemDetail(){
-    nautilus.openItemDetail(itemID: "41576306115",taoKeParams: nautilus.TaoKeParams(unionId: "", subPid: "", pid: "", adzoneId: ""));
+  _openItemDetail() {
+    nautilus.openItemDetail(itemID: "41576306115",taoKeParams: nautilus.TaoKeParams(
+        unionId: "", subPid: "mm_26632322_6858406_23810104", pid: "mm_26632322_6858406_23810104", adzoneId: "57328044"));
   }
-  _openUrl(){
-    nautilus.openUrl(pageUrl: "https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=2165762428&activityId=5698d91c0b474d9caf88279009bda4f3");
+
+  _openUrl() {
+    nautilus.openUrl(
+        pageUrl:
+            "https://taoquan.taobao.com/coupon/unify_apply.htm?sellerId=2165762428&activityId=5698d91c0b474d9caf88279009bda4f3",
+        taoKeParams: nautilus.TaoKeParams(
+            unionId: "", subPid: "mm_26632322_6858406_23810104", pid: "mm_26632322_6858406_23810104", adzoneId: "57328044"));
   }
 }

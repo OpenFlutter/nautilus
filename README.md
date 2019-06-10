@@ -14,17 +14,17 @@ Nautilus是阿里百川电商SDK在Flutter上的实现，通过Nautilus可以实
 ## 初始化
 ```dart
  import 'package:nautilus/nautilus.dart' as nautilus;
- InitAsyncResult  result = await nautilus.initTradeAsync();
+ var  result = await nautilus.initTradeAsync();
 ```
 ## 淘宝授权登录
 进行登录:
 ```dart
-InitAsyncResult result = await nautilus.login();
+var result = await nautilus.login();
 ```
 我们也可以通过*nautilus*获取当用户信息：
 ```dart
  import 'package:nautilus/nautilus.dart' as nautilus;
- User user = await nautilus.getUser();
+ nautilus.User user = await nautilus.getUser();
 ```
 也可以查询当前用户是否登录：
 ```dart

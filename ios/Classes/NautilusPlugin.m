@@ -13,6 +13,7 @@ NautilusTradeHandler *_tradeHandler;
                   binaryMessenger:[registrar messenger]];
     NautilusPlugin *instance = [[NautilusPlugin alloc] initWithRegistrar:registrar];
     [registrar addMethodCallDelegate:instance channel:channel];
+    [registrar addApplicationDelegate:instance];
 }
 
 - (instancetype)initWithRegistrar:(NSObject <FlutterPluginRegistrar> *)registrar {
@@ -47,5 +48,14 @@ NautilusTradeHandler *_tradeHandler;
 }
 
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    return [[AlibcTradeSDK sharedInstance] application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+}
+
+// NOTE: 9.0以后使用新API接口
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *)options {
+    return [[AlibcTradeSDK sharedInstance] application:app openURL:url options:options];
+}
 
 @end

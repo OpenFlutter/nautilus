@@ -27,7 +27,7 @@ A plugin for BaiChuanSDK.
 
 
   s.ios.deployment_target = '8.0'
-
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
 
 
 

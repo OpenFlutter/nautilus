@@ -22,7 +22,7 @@ A plugin for BaiChuanSDK.
   s.frameworks = "MobileCoreServices","AssetsLibrary","CoreMotion","ImageIO","CoreData","CoreLocation","Security","SystemConfiguration","CoreTelephony","CFNetwork","CoreGraphics","UIKit","Foundation"
 
   s.libraries = "z","stdc++","sqlite3.0"
-
+``
 
 
 

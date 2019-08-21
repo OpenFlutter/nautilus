@@ -4,7 +4,7 @@
 
 #import <Foundation/Foundation.h>
 #import <Flutter/Flutter.h>
-#import <AlibabaAuthSDK/ALBBSDK.h>
+
 @interface NautilusLoginService : NSObject
 - (void) handleLogin:(FlutterMethodCall *)call result:(FlutterResult)result;
 - (void) handleIsLogin:(FlutterMethodCall *)call result:(FlutterResult)result;

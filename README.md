@@ -2,7 +2,7 @@
 
 ![logo](./arts/logo.png)
 
-## 有想成为nautilus维护者尽情给我发邮件
+## 有想成为nautilus维护者的尽情给我发邮件
 <jarvan.mo@gmail.com>
 
 Nautilus是阿里百川电商SDK在Flutter上的实现，通过Nautilus可以实现淘宝登录，打开淘宝商品详情等功能。

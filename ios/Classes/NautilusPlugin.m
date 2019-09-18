@@ -1,4 +1,6 @@
 #import "NautilusPlugin.h"
+#import <AlibabaAuthSDK/ALBBSDK.h>
+#import <AlibcTradeSDK/AlibcTradeSDK.h>
 
 
 @implementation NautilusPlugin
